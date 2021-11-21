@@ -3,10 +3,10 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">This is my weather App</div>
   );
-}
+};
 
 export default App;
