@@ -28,12 +28,14 @@ const WeatherCard = ({
           Min:
           {' '}
           {tempMin}
+          °
         </p>
         {/* maximum temperature */}
         <p>
           Max:
           {' '}
           {tempMax}
+          °
         </p>
       </Card.Body>
     </Card>

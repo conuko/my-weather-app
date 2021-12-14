@@ -3,7 +3,7 @@ import {
   Row, Col, FormControl, Button,
 } from 'react-bootstrap';
 
-const CitySelector = () => {
+const CitySelector = ({ onSearch }) => {
   const [city, setCity] = useState('');
 
   return (

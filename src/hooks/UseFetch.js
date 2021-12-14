@@ -8,12 +8,22 @@ const UseFetch = (initialUrl) => {
   const [url, setUrl] = useState(initialUrl);
 
   useEffect(() => {
+    if (!url) return;
     setIsLoading(true);
+
+    // clear old search
+    setData(null);
+    setError(null);
 
     fetch(url)
       .then((res) => res.json())
       .then((dat) => {
+        // error handling if no data exists
         setIsLoading(false);
+        if (dat.cod >= 400) {
+          setError(dat.message);
+          return;
+        }
         setData(dat);
       })
       .catch((e) => {
@@ -28,4 +38,4 @@ const UseFetch = (initialUrl) => {
   };
 };
 
-export default UseFetch();
+export default UseFetch;
