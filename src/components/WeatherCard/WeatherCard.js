@@ -28,13 +28,13 @@ const WeatherCard = ({
         <p>
           Min:
           {' '}
-          {tempMin}
+          {Math.round(tempMin)}
         </p>
         {/* maximum temperature */}
         <p>
           Max:
           {' '}
-          {tempMax}
+          {Math.round(tempMax)}
         </p>
       </Card.Body>
     </div>

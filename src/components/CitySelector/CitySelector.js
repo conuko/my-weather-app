@@ -6,6 +6,12 @@ import {
 const CitySelector = ({ onSearch }) => {
   const [city, setCity] = useState('');
 
+  const onKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      onSearch(city);
+    }
+  };
+
   return (
     <>
       <Row>
@@ -22,6 +28,7 @@ const CitySelector = ({ onSearch }) => {
             onChange={(e) => setCity(e.target.value)}
             // the value will be the currently selected city
             value={city}
+            onKeyDown={onKeyDown}
           />
         </Col>
       </Row>
