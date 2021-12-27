@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import {
-  Row, Col, FormControl, Button,
-} from 'react-bootstrap';
 
 const CitySelector = ({ onSearch }) => {
   const [city, setCity] = useState('');
@@ -14,31 +11,33 @@ const CitySelector = ({ onSearch }) => {
 
   return (
     <>
-      <Row>
-        <Col>
+      <div>
+        <div>
           <h1>Search your city</h1>
-        </Col>
-      </Row>
+        </div>
+      </div>
 
-      <Row>
-        <Col xs={4}>
-          <FormControl
-            placeholder="Enter city"
-            // users input updates the value of city
-            onChange={(e) => setCity(e.target.value)}
-            // the value will be the currently selected city
-            value={city}
-            onKeyDown={onKeyDown}
-          />
-        </Col>
-      </Row>
+      <div>
+        <div>
+          <form>
+            <input
+              placeholder="Enter city"
+              // users input updates the value of city
+              onChange={(e) => setCity(e.target.value)}
+              // the value will be the currently selected city
+              value={city}
+              onKeyDown={onKeyDown}
+            />
+          </form>
+        </div>
+      </div>
 
-      <Row>
-        <Col>
+      <div>
+        <div>
           {/* The event handler to handle the button click */}
-          <Button onClick={() => onSearch(city)}>Check Weather</Button>
-        </Col>
-      </Row>
+          <button type="button" onClick={() => onSearch(city)}>Check Weather</button>
+        </div>
+      </div>
     </>
   );
 };

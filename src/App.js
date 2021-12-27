@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import CitySelector from './components/CitySelector/CitySelector';
 import WeatherList from './components/WeatherList/WeatherList';
 import UseFetch from './hooks/UseFetch';
@@ -30,10 +29,10 @@ const App = () => {
   };
 
   return (
-    <Container className="App">
+    <div className="App">
       <CitySelector onSearch={(city) => setUrl(`${API_BASE_URL}/data/2.5/forecast?q=${city}&cnt=5&appid=${API_KEY}&units=metric`)} />
       {getContent()}
-    </Container>
+    </div>
   );
 };
 

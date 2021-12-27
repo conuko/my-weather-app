@@ -1,13 +1,12 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
 import WeatherCard from '../WeatherCard/WeatherCard';
 
 const WeatherList = ({ weathers }) => {
   return (
-    <Row>
+    <div>
       {weathers.map(({ dt, main, weather }) => (
-        <Col key={dt}>
+        <div key={dt}>
           <WeatherCard
             tempMax={main.temp_max}
             tempMin={main.temp_min}
@@ -15,9 +14,9 @@ const WeatherList = ({ weathers }) => {
             main={weather[0].main}
             icon={weather[0].icon}
           />
-        </Col>
+        </div>
       ))}
-    </Row>
+    </div>
   );
 };
 

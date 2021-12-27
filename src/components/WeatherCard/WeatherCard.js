@@ -1,6 +1,4 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
-import classes from '../../styles/WeatherCard.module.css';
 
 const WeatherCard = ({
   dt, tempMin, tempMax, main, icon,
@@ -8,14 +6,15 @@ const WeatherCard = ({
   // create date object
   const date = new Date(dt);
   return (
-    <div className={classes.Card}>
-      <Card.Img
+    <div>
+      <img
         variant="top"
+        alt="card"
         // get the src from example url and pass the icon prop for icon code
         src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
       />
-      <Card.Body>
-        <Card.Title>{main}</Card.Title>
+      <div>
+        <div>{main}</div>
         {/*  datetime is received in milliseconds, let's turn into local date time */}
         <p>
           <span style={{ fontSize: '1rem', fontWeight: '500' }}>
@@ -36,7 +35,7 @@ const WeatherCard = ({
           {' '}
           {Math.round(tempMax)}
         </p>
-      </Card.Body>
+      </div>
     </div>
   );
 };
