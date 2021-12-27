@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { H2 } from '../_base/text/Text';
 
 const CitySelector = ({ onSearch }) => {
   const [city, setCity] = useState('');
@@ -13,7 +14,7 @@ const CitySelector = ({ onSearch }) => {
     <>
       <div>
         <div>
-          <h1>Search your city</h1>
+          <H2>Search your city</H2>
         </div>
       </div>
 

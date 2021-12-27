@@ -57,7 +57,10 @@ export default createGlobalStyle`
   /**
    * fonts
   */
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  }
 
   /**
    * global
@@ -72,8 +75,13 @@ export default createGlobalStyle`
     box-sizing: inherit;
   }
 
+  body {
+    font-family: ${theme.font.main};
+    font: ${theme.font.main};
+  }
+
   button, input {
     font-family: ${theme.font.main};
   }
 
-`
+`;

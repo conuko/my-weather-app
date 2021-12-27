@@ -15,7 +15,7 @@ const theme = {
     paragraph: '#a7a9be',
     button: '#ff8906',
     secondary: '#f25f4c',
-    tertiary: '#e53170'
+    tertiary: '#e53170',
   },
   // Shadows
   shadows: {
