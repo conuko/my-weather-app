@@ -3,7 +3,6 @@ import CitySelector from './components/CitySelector/CitySelector';
 import WeatherList from './components/WeatherList/WeatherList';
 import UseFetch from './hooks/UseFetch';
 import { API_KEY, API_BASE_URL } from './apis/config';
-import './App.css';
 
 const App = () => {
   // destructure the returned values from UseFetch
