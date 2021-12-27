@@ -11,13 +11,13 @@
 
 }
 
-
 @media screen and (min-width: 64rem) {
   .Card {
     display: inline-block;
     width: 150px;
   }
 }
+
 @media screen and (min-width: 90rem) {
   .Card {
     display: inline-block;
