@@ -9,9 +9,8 @@ export const H1 = styled.h1`
   margin-bottom: 1rem;
 `;
 
-export const H2 = styled.h2`
-  text-transform: uppercase;
-  font-family: ${theme.font.main};
-  font-size: ${theme.font.size.h2};
+export const H3 = styled.h3`
+  font-size: ${theme.font.size.h3};
   margin-bottom: 0.75rem;
+  font-weight: ${theme.font.weight.bold};
 `;

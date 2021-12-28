@@ -57,10 +57,7 @@ const GlobalStyle = createGlobalStyle`
   /**
    * fonts
   */
-  @font-face {
-    font-family: 'Open Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
   /**
    * global
@@ -76,17 +73,28 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: ${theme.font.main};
-    font: ${theme.font.main};
+    font-family: 'Open Sans', sans-serif;
+    padding: 25px;
+    color: ${theme.color.text};
+    background-color: ${theme.color.black};
   }
 
   button, input {
-    font-family: ${theme.font.main};
+    font-family: 'Open Sans', sans-serif;
   }
 
   button {
     background-color: ${theme.color.orange};
-    opacity: 0.2;
+    opacity: 0.8;
+  }
+
+  button:hover {
+    opacity: 1;
+  }
+
+  input:focus {
+    box-shadow: 0 0 5px ${theme.color.red};
+    border: 3px solid ${theme.color.red};
   }
 
 `;

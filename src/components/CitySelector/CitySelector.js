@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { H2 } from '../_base/text/Text';
-import CheckWeatherButton from '../_base/button/CheckWeatherButton';
+import { H3 } from '../_base/text/Text';
+import { CheckWeatherButton, CheckWeatherInput } from './CitySelector.styles';
 
 const CitySelector = ({ onSearch }) => {
   const [city, setCity] = useState('');
@@ -15,14 +15,14 @@ const CitySelector = ({ onSearch }) => {
     <>
       <div>
         <div>
-          <H2>Search your city</H2>
+          <H3>Search your city</H3>
         </div>
       </div>
 
       <div>
         <div>
           <form>
-            <input
+            <CheckWeatherInput
               placeholder="Enter city"
               // users input updates the value of city
               onChange={(e) => setCity(e.target.value)}
