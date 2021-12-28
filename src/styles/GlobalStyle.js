@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import theme from './theme';
 
-export default createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   /*
     * Reset CSS
     * http://meyerweb.com/eric/tools/css/reset/
@@ -84,4 +84,11 @@ export default createGlobalStyle`
     font-family: ${theme.font.main};
   }
 
+  button {
+    background-color: ${theme.color.orange};
+    opacity: 0.2;
+  }
+
 `;
+
+export default GlobalStyle;

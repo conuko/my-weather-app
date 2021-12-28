@@ -1,2 +1,2 @@
-export { default as base } from './base';
+/* eslint-disable import/prefer-default-export */
 export { default as theme } from './theme';

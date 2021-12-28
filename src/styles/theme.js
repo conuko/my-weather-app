@@ -10,12 +10,12 @@ const theme = {
   // Colors
   color: {
     white: '#fff',
-    background: '#0f0e17',
+    black: '#0f0e17',
     text: '#fffffe',
-    paragraph: '#a7a9be',
-    button: '#ff8906',
-    secondary: '#f25f4c',
-    tertiary: '#e53170',
+    grey: '#a7a9be',
+    orange: '#ff8906',
+    red: '#f25f4c',
+    pink: '#e53170',
   },
   // Shadows
   shadows: {
@@ -23,7 +23,7 @@ const theme = {
       '0 1px 9px 2px rgba(60, 64, 67, 0.03), 0 1px 1px 0 rgba(60, 64, 67, 0.15)',
   },
   // Borders
-  border: { radius: '1px' },
+  border: { radius: '3px' },
   // Fonts
   font: {
     main: 'Open Sans',

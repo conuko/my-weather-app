@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { H2 } from '../_base/text/Text';
+import CheckWeatherButton from '../_base/button/CheckWeatherButton';
 
 const CitySelector = ({ onSearch }) => {
   const [city, setCity] = useState('');
@@ -36,7 +37,7 @@ const CitySelector = ({ onSearch }) => {
       <div>
         <div>
           {/* The event handler to handle the button click */}
-          <button type="button" onClick={() => onSearch(city)}>Check Weather</button>
+          <CheckWeatherButton type="button" onClick={() => onSearch(city)}>Check Weather</CheckWeatherButton>
         </div>
       </div>
     </>
