@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import {
-  Row, Col, FormControl, Button,
-} from 'react-bootstrap';
+import { H2 } from '../_base/text/Text';
+import { CheckWeatherButton, CheckWeatherInput, Container } from './CitySelector.styles';
 
 const CitySelector = ({ onSearch }) => {
   const [city, setCity] = useState('');
@@ -14,31 +13,33 @@ const CitySelector = ({ onSearch }) => {
 
   return (
     <>
-      <Row>
-        <Col>
-          <h1>Search your city</h1>
-        </Col>
-      </Row>
+      <Container>
+        <div>
+          <H2>Weather Report.</H2>
+        </div>
+      </Container>
 
-      <Row>
-        <Col xs={4}>
-          <FormControl
-            placeholder="Enter city"
-            // users input updates the value of city
-            onChange={(e) => setCity(e.target.value)}
-            // the value will be the currently selected city
-            value={city}
-            onKeyDown={onKeyDown}
-          />
-        </Col>
-      </Row>
+      <Container>
+        <div>
+          <form>
+            <CheckWeatherInput
+              placeholder="Enter city"
+              // users input updates the value of city
+              onChange={(e) => setCity(e.target.value)}
+              // the value will be the currently selected city
+              value={city}
+              onKeyDown={onKeyDown}
+            />
+          </form>
+        </div>
+      </Container>
 
-      <Row>
-        <Col>
+      <Container>
+        <div>
           {/* The event handler to handle the button click */}
-          <Button onClick={() => onSearch(city)}>Check Weather</Button>
-        </Col>
-      </Row>
+          <CheckWeatherButton type="button" onClick={() => onSearch(city)}>Check Weather</CheckWeatherButton>
+        </div>
+      </Container>
     </>
   );
 };

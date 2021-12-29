@@ -1,10 +1,9 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import CitySelector from './components/CitySelector/CitySelector';
 import WeatherList from './components/WeatherList/WeatherList';
+import GlobalStyle from './styles/GlobalStyle';
 import UseFetch from './hooks/UseFetch';
 import { API_KEY, API_BASE_URL } from './apis/config';
-import './App.css';
 
 const App = () => {
   // destructure the returned values from UseFetch
@@ -30,10 +29,11 @@ const App = () => {
   };
 
   return (
-    <Container className="App">
+    <div className="App">
+      <GlobalStyle />
       <CitySelector onSearch={(city) => setUrl(`${API_BASE_URL}/data/2.5/forecast?q=${city}&cnt=5&appid=${API_KEY}&units=metric`)} />
       {getContent()}
-    </Container>
+    </div>
   );
 };
 
