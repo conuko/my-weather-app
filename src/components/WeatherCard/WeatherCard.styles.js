@@ -12,13 +12,18 @@ export const CardWrapper = styled.div`
   border: 3px solid black;
 `;
 
+export const Image = styled.img`
+  margin: 0;
+  padding: 0;
+  width: 150px;
+`;
+
 export const CardBody = styled.div`
   padding: 2rem;
   background-color: ${theme.color.red};
   box-shadow: 4.2px 8.5px 8.5px hsl(0deg 0% 0% / 0.37);
   color: ${theme.color.black};
   border-radius: 3px;
-  border: 3px solid ${theme.color.black};
 `;
 
 export const Main = styled.div`
@@ -26,4 +31,18 @@ export const Main = styled.div`
   font-size: ${theme.font.size.h3};
   font-weight: ${theme.font.weight.bold};
   color: ${theme.color.black};
+`;
+
+export const DateAndTime = styled.p`
+  margin-bottom: 1rem;
+`;
+
+export const Min = styled.p`
+  color: ${theme.color.blue};
+  font-weight: ${theme.font.weight.bold};
+`;
+
+export const Max = styled.p`
+  color: ${theme.color.black};
+  font-weight: ${theme.font.weight.bold};
 `;

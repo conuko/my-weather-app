@@ -17,6 +17,7 @@ const theme = {
     orange: '#ff8906',
     red: '#f25f4c',
     pink: '#e53170',
+    blue: '#8bd3dd',
   },
   // Shadows
   shadows: {

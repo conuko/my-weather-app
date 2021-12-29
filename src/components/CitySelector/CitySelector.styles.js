@@ -24,7 +24,7 @@ export const CheckWeatherInput = styled.input`
   transition: all .30s ease-in-out;
   border: 3px solid #000;
   color: ${theme.color.red};
-  background-color: ${theme.color.black};
+  background-color: ${theme.color.white};
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   outline: none;
