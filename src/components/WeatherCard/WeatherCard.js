@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardWrapper, CardBody } from './WeatherCard.styles';
+import { CardWrapper, CardBody, Main } from './WeatherCard.styles';
 
 const WeatherCard = ({
   dt, tempMin, tempMax, main, icon,
@@ -15,7 +15,7 @@ const WeatherCard = ({
         src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
       />
       <CardBody>
-        <div>{main}</div>
+        <Main>{main}</Main>
         {/*  datetime is received in milliseconds, let's turn into local date time */}
         <p>
           <span style={{ fontSize: '1rem', fontWeight: '500' }}>
