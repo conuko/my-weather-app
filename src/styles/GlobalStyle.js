@@ -74,7 +74,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Open Sans', sans-serif;
-    padding: 25px;
+    padding: 75px;
     color: ${theme.color.text};
     background-color: ${theme.color.black};
   }

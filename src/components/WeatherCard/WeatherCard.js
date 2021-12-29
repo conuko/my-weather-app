@@ -1,4 +1,5 @@
 import React from 'react';
+import { CardWrapper, CardBody } from './WeatherCard.styles';
 
 const WeatherCard = ({
   dt, tempMin, tempMax, main, icon,
@@ -6,14 +7,14 @@ const WeatherCard = ({
   // create date object
   const date = new Date(dt);
   return (
-    <div>
+    <CardWrapper>
       <img
         variant="top"
         alt="card"
         // get the src from example url and pass the icon prop for icon code
         src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
       />
-      <div>
+      <CardBody>
         <div>{main}</div>
         {/*  datetime is received in milliseconds, let's turn into local date time */}
         <p>
@@ -35,8 +36,8 @@ const WeatherCard = ({
           {' '}
           {Math.round(tempMax)}
         </p>
-      </div>
-    </div>
+      </CardBody>
+    </CardWrapper>
   );
 };
 

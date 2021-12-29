@@ -6,7 +6,7 @@ export const CheckWeatherButton = styled.button`
   font-size: ${theme.font.size.h5};
   font-weight: ${theme.font.weight.bold};
   background-color: ${theme.color.orange};
-  opacity: 0.8;
+  opacity: 0.9;
   color: ${theme.color.text};
   cursor: pointer;
   border-radius: ${theme.border.radius};

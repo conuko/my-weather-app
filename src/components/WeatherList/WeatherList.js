@@ -1,10 +1,11 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
 import WeatherCard from '../WeatherCard/WeatherCard';
+import { Wrapper } from './WeatherList.styles';
 
 const WeatherList = ({ weathers }) => {
   return (
-    <div>
+    <Wrapper>
       {weathers.map(({ dt, main, weather }) => (
         <div key={dt}>
           <WeatherCard
@@ -16,7 +17,7 @@ const WeatherList = ({ weathers }) => {
           />
         </div>
       ))}
-    </div>
+    </Wrapper>
   );
 };
 
