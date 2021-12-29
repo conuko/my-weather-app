@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { H3 } from '../_base/text/Text';
-import { CheckWeatherButton, CheckWeatherInput } from './CitySelector.styles';
+import { H2 } from '../_base/text/Text';
+import { CheckWeatherButton, CheckWeatherInput, Container } from './CitySelector.styles';
 
 const CitySelector = ({ onSearch }) => {
   const [city, setCity] = useState('');
@@ -13,13 +13,13 @@ const CitySelector = ({ onSearch }) => {
 
   return (
     <>
-      <div>
+      <Container>
         <div>
-          <H3>Search your city</H3>
+          <H2>Weather Report.</H2>
         </div>
-      </div>
+      </Container>
 
-      <div>
+      <Container>
         <div>
           <form>
             <CheckWeatherInput
@@ -32,14 +32,14 @@ const CitySelector = ({ onSearch }) => {
             />
           </form>
         </div>
-      </div>
+      </Container>
 
-      <div>
+      <Container>
         <div>
           {/* The event handler to handle the button click */}
           <CheckWeatherButton type="button" onClick={() => onSearch(city)}>Check Weather</CheckWeatherButton>
         </div>
-      </div>
+      </Container>
     </>
   );
 };

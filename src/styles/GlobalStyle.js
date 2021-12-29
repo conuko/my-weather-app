@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: ${theme.font.main};
+    font-family: 'Open Sans', sans-serif;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -81,15 +81,6 @@ const GlobalStyle = createGlobalStyle`
 
   button, input {
     font-family: 'Open Sans', sans-serif;
-  }
-
-  button {
-    background-color: ${theme.color.orange};
-    opacity: 0.8;
-  }
-
-  button:hover {
-    opacity: 1;
   }
 
   input:focus {

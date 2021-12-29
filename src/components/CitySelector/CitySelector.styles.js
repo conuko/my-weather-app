@@ -5,11 +5,16 @@ export const CheckWeatherButton = styled.button`
   border: none;
   font-size: ${theme.font.size.h5};
   font-weight: ${theme.font.weight.bold};
+  background-color: ${theme.color.orange};
+  opacity: 0.8;
   color: ${theme.color.text};
   cursor: pointer;
   border-radius: ${theme.border.radius};
   padding: 1rem 1.75rem;
   width: 100%;
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const CheckWeatherInput = styled.input`
@@ -26,4 +31,9 @@ export const CheckWeatherInput = styled.input`
   padding: 1rem 0 1rem 1rem;
   transition: all .3s ease;
   width: 100%;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
