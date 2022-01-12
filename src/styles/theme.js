@@ -16,9 +16,12 @@ const theme = {
     grey: '#a7a9be',
     lightGrey: '#f2f2f1',
     orange: '#ff8906',
-    red: '#f25f4c',
+    red: '#f85750',
     pink: '#e53170',
-    blue: '#8bd3dd',
+    blue: '#38798f',
+    darkBlue: '#1e5c9a',
+    yellow: '#ffd14a',
+    lightYellow: '#ffedc5',
   },
   // Shadows
   shadows: {

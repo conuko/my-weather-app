@@ -3,8 +3,10 @@ import { H2 } from '../_base/text/Text'
 import {
   CheckWeatherButton,
   CheckWeatherInput,
+  WeatherImg,
   Container,
 } from './CitySelector.styles'
+import weatherimg from '../../assets/images/surr-weather-forecast.png'
 
 const CitySelector = ({ onSearch }) => {
   const [city, setCity] = useState('')
@@ -18,12 +20,10 @@ const CitySelector = ({ onSearch }) => {
   return (
     <>
       <Container>
+        <WeatherImg src={weatherimg} alt="weatherlogo" />
         <div>
           <H2>Weather Report.</H2>
         </div>
-      </Container>
-
-      <Container>
         <div>
           <form>
             <CheckWeatherInput

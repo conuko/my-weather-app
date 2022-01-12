@@ -6,7 +6,7 @@ export const CardWrapper = styled.div`
   padding: 3rem 2rem;
   margin: 48px auto 0;
   width: 100%;
-  background-color: ${theme.color.lightBlack};
+  background-color: ${theme.color.blue};
   box-shadow: 4.2px 8.5px 8.5px hsl(0deg 0% 0% / 0.37);
   border-radius: 5px;
   border: 3px solid black;
@@ -20,7 +20,7 @@ export const Image = styled.img`
 
 export const CardBody = styled.div`
   padding: 2rem;
-  background-color: ${theme.color.orange};
+  background-color: ${theme.color.lightYellow};
   box-shadow: 4.2px 8.5px 8.5px hsl(0deg 0% 0% / 0.37);
   color: ${theme.color.black};
   border-radius: 5px;
