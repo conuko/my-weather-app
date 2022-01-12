@@ -4,13 +4,14 @@
  * See: https://www.styled-components.com/docs/advanced#theming
  *
  *
-*/
+ */
 
 const theme = {
   // Colors
   color: {
     white: '#fff',
     black: '#0f0e17',
+    lightBlack: 'rgba(15, 14, 23, 0.85)',
     text: '#fffffe',
     grey: '#a7a9be',
     lightGrey: '#f2f2f1',
@@ -49,6 +50,6 @@ const theme = {
       thin: 100,
     },
   },
-};
+}
 
-export default theme;
+export default theme

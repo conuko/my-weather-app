@@ -1,13 +1,17 @@
-import React from 'react';
+import React from 'react'
 import {
-  CardWrapper, Image, CardBody, Main, DateAndTime, Min, Max,
-} from './WeatherCard.styles';
+  CardWrapper,
+  Image,
+  CardBody,
+  Main,
+  DateAndTime,
+  Min,
+  Max,
+} from './WeatherCard.styles'
 
-const WeatherCard = ({
-  dt, tempMin, tempMax, main, icon,
-}) => {
+const WeatherCard = ({ dt, tempMin, tempMax, main, icon }) => {
   // create date object
-  const date = new Date(dt);
+  const date = new Date(dt)
   return (
     <CardWrapper>
       <Image
@@ -22,25 +26,15 @@ const WeatherCard = ({
         <DateAndTime>
           {date.toLocaleDateString()}
           <br />
-          <span>
-            {date.toLocaleTimeString()}
-          </span>
+          <span>{date.toLocaleTimeString()}</span>
         </DateAndTime>
         {/* minimum temperature */}
-        <Min>
-          Min:
-          {' '}
-          {Math.round(tempMin)}
-        </Min>
+        <Min>Min: {Math.round(tempMin)}°</Min>
         {/* maximum temperature */}
-        <Max>
-          Max:
-          {' '}
-          {Math.round(tempMax)}
-        </Max>
+        <Max>Max: {Math.round(tempMax)}°</Max>
       </CardBody>
     </CardWrapper>
-  );
-};
+  )
+}
 
-export default WeatherCard;
+export default WeatherCard
