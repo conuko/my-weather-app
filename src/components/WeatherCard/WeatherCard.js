@@ -18,7 +18,7 @@ const WeatherCard = ({ dt, tempMin, tempMax, main, icon }) => {
         variant="top"
         alt="card"
         // get the src from example url and pass the icon prop for icon code
-        src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
+        src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
       />
       <CardBody>
         <Main>{main}</Main>
