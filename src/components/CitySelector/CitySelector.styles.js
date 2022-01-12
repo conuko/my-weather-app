@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme } from '../../styles';
+import styled from 'styled-components'
+import { theme } from '../../styles'
 
 export const CheckWeatherButton = styled.button`
   border: none;
@@ -15,13 +15,13 @@ export const CheckWeatherButton = styled.button`
   &:hover {
     opacity: 1;
   }
-`;
+`
 
 export const CheckWeatherInput = styled.input`
   border-radius: ${theme.border.radius};
   font-size: ${theme.font.size.h5};
   font-weight: ${theme.font.weight.bold};
-  transition: all .30s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 3px solid #000;
   color: ${theme.color.red};
   background-color: ${theme.color.white};
@@ -29,11 +29,15 @@ export const CheckWeatherInput = styled.input`
   margin-bottom: 1rem;
   outline: none;
   padding: 1rem 0 1rem 1rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   width: 100%;
-`;
+`
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-`;
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+`
