@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/my-weather-app/static/js/main.1ce8c7ae.chunk.js",
+    "main.js.map": "/my-weather-app/static/js/main.1ce8c7ae.chunk.js.map",
+    "runtime-main.js": "/my-weather-app/static/js/runtime-main.d9ac4cd5.js",
+    "runtime-main.js.map": "/my-weather-app/static/js/runtime-main.d9ac4cd5.js.map",
+    "static/js/2.7cb56a38.chunk.js": "/my-weather-app/static/js/2.7cb56a38.chunk.js",
+    "static/js/2.7cb56a38.chunk.js.map": "/my-weather-app/static/js/2.7cb56a38.chunk.js.map",
+    "static/js/3.ffb72c22.chunk.js": "/my-weather-app/static/js/3.ffb72c22.chunk.js",
+    "static/js/3.ffb72c22.chunk.js.map": "/my-weather-app/static/js/3.ffb72c22.chunk.js.map",
+    "index.html": "/my-weather-app/index.html",
+    "static/js/2.7cb56a38.chunk.js.LICENSE.txt": "/my-weather-app/static/js/2.7cb56a38.chunk.js.LICENSE.txt",
+    "static/media/surr-weather-forecast.b38758e3.png": "/my-weather-app/static/media/surr-weather-forecast.b38758e3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d9ac4cd5.js",
+    "static/js/2.7cb56a38.chunk.js",
+    "static/js/main.1ce8c7ae.chunk.js"
+  ]
+}
