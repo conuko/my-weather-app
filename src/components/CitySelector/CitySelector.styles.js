@@ -5,7 +5,7 @@ export const CheckWeatherButton = styled.button`
   border: none;
   font-size: ${theme.font.size.h5};
   font-weight: ${theme.font.weight.bold};
-  background-color: ${theme.color.orange};
+  background-color: ${theme.color.darkBlue};
   opacity: 0.9;
   color: ${theme.color.text};
   cursor: pointer;
@@ -31,6 +31,13 @@ export const CheckWeatherInput = styled.input`
   padding: 1rem 0 1rem 1rem;
   transition: all 0.3s ease;
   width: 100%;
+`
+
+export const WeatherImg = styled.img`
+  width: auto;
+  height: auto;
+  max-width: 450px;
+  max-height: 900px;
 `
 
 export const Container = styled.div`
