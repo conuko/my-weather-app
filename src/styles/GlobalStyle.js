@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import theme from './theme';
+import { createGlobalStyle } from 'styled-components'
+import theme from './theme'
 
 const GlobalStyle = createGlobalStyle`
   /*
@@ -75,8 +75,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Open Sans', sans-serif;
     padding: 75px;
-    color: ${theme.color.text};
-    background-color: ${theme.color.black};
+    color: ${theme.color.black};
+    background-color: ${theme.color.lightGrey};
   }
 
   button, input {
@@ -88,6 +88,6 @@ const GlobalStyle = createGlobalStyle`
     border: 3px solid ${theme.color.red};
   }
 
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle
